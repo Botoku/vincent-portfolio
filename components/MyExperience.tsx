@@ -4,7 +4,7 @@ const MyExperience = () => {
   return (
     <div className="">
       <div className="w-[90%] mx-auto mb-20">
-        <h2 className="text-center">My Experience</h2>
+        <h2 className="text-center text-2xl font-bold">My Experience</h2>
         <div className="flex gap-7 text-sm mt-10">
           <div className="w-1/2">
             <div className="flex gap-2 mb-4">
