@@ -8,7 +8,7 @@ import "./globals.css";
 // });
 const italiana = Italiana({
   variable: "--font-italiana",
-  // subsets: ["latin"],
+  subsets: ["latin"],
   weight: "400"
 });
 
