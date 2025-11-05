@@ -41,7 +41,7 @@ const StickyCards = () => {
       <div
         className={`sticky-card flex justify-center items-center   relative w-full h-svh  will-change-transform after:content-[''] after:absolute after:top-0 after:left-0 after:w-full after:h-full after:transition-opacity after:z-2 after:pointer-events-none`}
       >
-        <div className="bg-purpleN-600 w-[85%] rounded-2xl mx-auto h-[80%] flex items-center">
+        <div className="bg-purpleN-600 border w-[85%] rounded-2xl mx-auto h-[80%] flex items-center">
           <div className="flex gap-5 w-[90%] mx-auto h-[95%]">
             <div className="w-1/2">
               {" "}
@@ -81,10 +81,10 @@ const StickyCards = () => {
                   <p className="font-bold  text-sm">Outcome:</p>
                   <li>
                     Streamlined the lead management process by centralizing
-                    submissions in one dashboard while delivering a modern, dynamic website with seamless content
-                    updates and engaging animations.
+                    submissions in one dashboard while delivering a modern,
+                    dynamic website with seamless content updates and engaging
+                    animations.
                   </li>
-
                 </ul>
               </div>
             </div>
@@ -109,7 +109,11 @@ const StickyCards = () => {
                   <li>MongoDB</li>
                 </ul>
               </div>
-              <a className="text-sm  border-b border-golden-yellow" href="https://www.letswoohoo.com/" target="_blank">
+              <a
+                className="text-sm  border-b "
+                href="https://www.letswoohoo.com/"
+                target="_blank"
+              >
                 View Website
               </a>
             </div>
@@ -119,59 +123,55 @@ const StickyCards = () => {
       <div
         className={`sticky-card flex justify-center items-center   relative w-full h-svh  will-change-transform after:content-[''] after:absolute after:top-0 after:left-0 after:w-full after:h-full after:transition-opacity after:z-2 after:pointer-events-none`}
       >
-        <div className="bg-purpleN-600 w-[85%] rounded-2xl mx-auto h-[80%] flex items-center">
+        <div className="bg-purpleN-600 border w-[85%] rounded-2xl mx-auto h-[80%] flex items-center">
           <div className="flex gap-5 w-[90%] mx-auto h-[95%]">
             <div className="w-1/2">
               {" "}
-              <p className="text-bold text-xl mb-4">grupolvt Website</p>
+              <p className="text-bold text-xl mb-2">grupolvt Website</p>
               <p className="italic text-sm">
-                A fully custom, high-performance website designed to showcase
-                rich media content — including videos, animations, and imagery —
-                while collecting and managing client leads efficiently.
+                A complete redesign and rebuild of a company website that was
+                previously built on WordPress and difficult to navigate. The new
+                version delivers a smoother, faster experience with modern
+                animations and includes secure internal tools for company
+                members.
               </p>
               <div className="">
-                <ul className="my-3 text-sm list-disc">
-                  <p className="font-bold text-base">What I did:</p>
+                <ul className="my-3 text-xs list-disc">
+                  <p className="font-bold text-sm">What I did:</p>
                   <li>
-                    Developed the website from scratch using Next.js and
-                    Tailwind CSS, ensuring a fast, responsive, and visually
-                    appealing design.
+                    Migrated the entire website from WordPress to Next.js,
+                    improving performance, user experience, and maintainability.
                   </li>
                   <li>
-                    Connected the website to Sanity CMS, allowing the client to
-                    easily update text, images, and videos without coding.
+                    Implemented GSAP animations throughout the site to create
+                    smooth transitions, dynamic interactions, and a polished
+                    feel.
                   </li>
                   <li>
-                    Implemented smooth animations with GSAP to create an
-                    engaging and interactive user experience.
+                    Developed secure internal tools behind a NextAuth
+                    authentication system, allowing company members to log in
+                    and access private features.
                   </li>
                   <li>
-                    Built a lead collection system using Node.js and Nodemailer
-                    that automatically sends form submissions to the company’s
-                    email.
+                    Integrated MongoDB to handle data storage for internal
+                    tools, enabling members to submit and view information in
+                    real time.
                   </li>
                   <li>
-                    Integrated MongoDB to securely store leads and developed a
-                    dashboard to display and manage them in real time.
-                  </li>
-                  <li>
-                    Optimized the site for speed, accessibility, and SEO,
-                    ensuring excellent performance across all devices.
+                    Ensured SEO optimization, performance tuning, and
+                    accessibility, maintaining fast load times despite heavy
+                    animations.
                   </li>
                 </ul>
-                <ul className="my-3 text-sm list-disc">
-                  <p className="font-bold  text-base">Outcome:</p>
+                <ul className="my-3 text-xs list-disc">
+                  <p className="font-bold  text-sm">Outcome:</p>
                   <li>
-                    Streamlined the lead management process by centralizing
-                    submissions in one dashboard.
-                  </li>
-                  <li>
-                    Delivered a modern, dynamic website with seamless content
-                    updates and engaging animations.
-                  </li>
-                  <li>
-                    Improved user engagement and ease of maintenance for the
-                    client.
+                    Transformed an outdated, difficult-to-use WordPress site
+                    into a fast, visually engaging Next.js website with smooth
+                    GSAP animations and secure internal tools powered by
+                    NextAuth and MongoDB. The redesign improved team efficiency,
+                    enhanced user experience, and led to a significant increase
+                    in incoming leads.
                   </li>
                 </ul>
               </div>
@@ -187,8 +187,8 @@ const StickyCards = () => {
                   className="object-cover w-full h-auto"
                 />
               </div>
-              <div className="mt-4">
-                <p className="text-lg  font-bold">Tech Stack</p>
+              <div className="mt-4 text-xs">
+                <p className="text-sm  font-bold">Tech Stack</p>
                 <ul className="flex gap-2 italic">
                   <li>React</li>
                   <li>Next.js</li>
@@ -199,7 +199,11 @@ const StickyCards = () => {
                   <li>Node.js</li>
                 </ul>
               </div>
-              <a href="https://www.letswoohoo.com/" target="_blank">
+              <a
+                className="text-sm  border-b "
+                href="https://www.letswoohoo.com/"
+                target="_blank"
+              >
                 View Website
               </a>
             </div>
@@ -209,59 +213,45 @@ const StickyCards = () => {
       <div
         className={`sticky-card flex justify-center items-center   relative w-full h-svh  will-change-transform after:content-[''] after:absolute after:top-0 after:left-0 after:w-full after:h-full after:transition-opacity after:z-2 after:pointer-events-none`}
       >
-        <div className="bg-purpleN-600 w-[85%] rounded-2xl mx-auto h-[80%] flex items-center">
+        <div className="bg-purpleN-600 border w-[85%] rounded-2xl mx-auto h-[80%] flex items-center">
           <div className="flex gap-5 w-[90%] mx-auto h-[95%]">
             <div className="w-1/2">
               {" "}
-              <p className="text-bold text-xl mb-4">Tulip Pictures Website</p>
+              <p className="text-bold text-xl mb-2">Tulip Pictures Website</p>
               <p className="italic text-sm">
-                A fully custom, high-performance website designed to showcase
-                rich media content — including videos, animations, and imagery —
-                while collecting and managing client leads efficiently.
+                A visually rich website built to showcase a movie distribution
+                company’s catalog. The platform highlights films through
+                interactive layouts, a full-page home slider, and easy content
+                management for the client.
               </p>
               <div className="">
-                <ul className="my-3 text-sm list-disc">
-                  <p className="font-bold text-base">What I did:</p>
+                <ul className="my-3 text-xs list-disc">
+                  <p className="font-bold text-sm">What I did:</p>
                   <li>
-                    Developed the website from scratch using Next.js and
-                    Tailwind CSS, ensuring a fast, responsive, and visually
-                    appealing design.
+                    Developed the website using Next.js for fast performance,
+                    smooth navigation, and SEO-friendly architecture.
                   </li>
                   <li>
-                    Connected the website to Sanity CMS, allowing the client to
-                    easily update text, images, and videos without coding.
+                    Implemented a full-page home slider to feature highlighted
+                    movies in a dynamic and cinematic way.
                   </li>
                   <li>
-                    Implemented smooth animations with GSAP to create an
-                    engaging and interactive user experience.
+                    Created multiple portfolio sections for different categories
+                    of films, allowing visitors to explore each project easily.
                   </li>
                   <li>
-                    Built a lead collection system using Node.js and Nodemailer
-                    that automatically sends form submissions to the company’s
-                    email.
-                  </li>
-                  <li>
-                    Integrated MongoDB to securely store leads and developed a
-                    dashboard to display and manage them in real time.
-                  </li>
-                  <li>
-                    Optimized the site for speed, accessibility, and SEO,
-                    ensuring excellent performance across all devices.
+                    Integrated Sanity CMS, enabling the client to effortlessly
+                    update movie posters, trailers, and details without needing
+                    a developer.
                   </li>
                 </ul>
-                <ul className="my-3 text-sm list-disc">
-                  <p className="font-bold  text-base">Outcome:</p>
+                <ul className="my-3 text-xs list-disc">
+                  <p className="font-bold  text-sm">Outcome:</p>
                   <li>
-                    Streamlined the lead management process by centralizing
-                    submissions in one dashboard.
-                  </li>
-                  <li>
-                    Delivered a modern, dynamic website with seamless content
-                    updates and engaging animations.
-                  </li>
-                  <li>
-                    Improved user engagement and ease of maintenance for the
-                    client.
+                    Delivered a modern, easy-to-manage platform that keeps the
+                    company’s movie portfolio up to date, enhances user
+                    engagement through animations and performance optimization,
+                    and reflects the brand’s cinematic identity.
                   </li>
                 </ul>
               </div>
@@ -278,7 +268,7 @@ const StickyCards = () => {
                 />
               </div>
               <div className="mt-4">
-                <p className="text-lg  font-bold">Tech Stack</p>
+                <p className="text-sm  font-bold">Tech Stack</p>
                 <ul className="flex gap-2 italic">
                   <li>React</li>
                   <li>Next.js</li>
@@ -287,14 +277,17 @@ const StickyCards = () => {
                   <li>MongoDB</li>
                 </ul>
               </div>
-              <a href="https://www.letswoohoo.com/" target="_blank">
+              <a
+                className="text-sm  border-b "
+                href="https://www.letswoohoo.com/"
+                target="_blank"
+              >
                 View Website
               </a>
             </div>
           </div>
         </div>
       </div>
-
     </div>
   );
 };
