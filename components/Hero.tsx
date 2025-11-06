@@ -3,8 +3,8 @@ import Skills from "./Skills";
 
 const Hero = () => {
   return (
-    <div className="bg-purpleN-600  w-[95vw] h-[85%] rounded-2xl flex justify-center items-center">
-      <div className="h-[80%] w-[90%] mx-auto">
+    <div className="bg-purpleN-600  w-[95vw] md:h-[85%] rounded-2xl flex justify-center items-center">
+      <div className="md:h-[80%] w-[90%] mb-3 md:mb-0 mx-auto">
         <h1 className="hidden">Vincent Portfolio</h1>
         <p className="font-italiana text-center text-2xl my-6">
           Botoku Vincent Babajide

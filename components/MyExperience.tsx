@@ -5,8 +5,8 @@ const MyExperience = () => {
     <div className="">
       <div className="w-[90%] mx-auto mb-20">
         <h2 className="text-center text-2xl font-bold">My Experience</h2>
-        <div className="flex gap-7 text-sm mt-10">
-          <div className="w-1/2">
+        <div className="md:flex gap-7 text-sm mt-10">
+          <div className="md:w-1/2">
             <div className="flex gap-2 mb-4">
               <p className="font-bold">LetsWooHoo</p>
               <p className="italic">Nov 2023 - Present</p>
@@ -53,7 +53,7 @@ const MyExperience = () => {
               </ul>
             </div>
           </div>
-          <div className="text-sm w-1/2">
+          <div className="text-sm mt-10 md:mt-0 md:w-1/2">
             <div className="flex gap-2 mb-4">
               <p className="font-bold">Team Croco</p>
               <p className="italic">July 2022 - Nov 2023</p>

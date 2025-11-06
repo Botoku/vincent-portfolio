@@ -43,8 +43,8 @@ const StickyCards = () => {
         className={`sticky-card flex justify-center items-center   relative w-full h-svh  will-change-transform after:content-[''] after:absolute after:top-0 after:left-0 after:w-full after:h-full after:transition-opacity after:z-2 after:pointer-events-none`}
       >
         <div className="bg-purpleN-600 border w-[85%] rounded-2xl mx-auto h-[80%] flex items-center">
-          <div className="flex gap-5 w-[90%] mx-auto h-[95%]">
-            <div className="w-1/2">
+          <div className="md:flex gap-5 w-[90%] mx-auto h-[95%]">
+            <div className="md:w-1/2">
               {" "}
               <p className="text-bold text-xl mb-2">letswoohoo Website</p>
               <p className="italic text-sm">
@@ -89,7 +89,7 @@ const StickyCards = () => {
                 </ul>
               </div>
             </div>
-            <div className="w-1/2">
+            <div className="hidden md:block w-1/2">
               {" "}
               <div className="relative w-full h-[300px] max-h-[300px] overflow-hidden rounded-2xl">
                 <Image
@@ -125,8 +125,8 @@ const StickyCards = () => {
         className={`sticky-card flex justify-center items-center   relative w-full h-svh  will-change-transform after:content-[''] after:absolute after:top-0 after:left-0 after:w-full after:h-full after:transition-opacity after:z-2 after:pointer-events-none`}
       >
         <div className="bg-purpleN-600 border w-[85%] rounded-2xl mx-auto h-[80%] flex items-center">
-          <div className="flex gap-5 w-[90%] mx-auto h-[95%]">
-            <div className="w-1/2">
+          <div className="md:flex gap-5 w-[90%] mx-auto h-[95%]">
+            <div className="md:w-1/2">
               {" "}
               <p className="text-bold text-xl mb-2">grupolvt Website</p>
               <p className="italic text-sm">
@@ -158,14 +158,14 @@ const StickyCards = () => {
                     tools, enabling members to submit and view information in
                     real time.
                   </li>
-                  <li>
+                  <li className="hidden md:block">
                     Ensured SEO optimization, performance tuning, and
                     accessibility, maintaining fast load times despite heavy
                     animations.
                   </li>
                 </ul>
                 <ul className="my-3 text-xs list-disc">
-                  <p className="font-bold  text-sm">Outcome:</p>
+                  <p className="font-bold  text-sm hidden md:block">Outcome:</p>
                   <li>
                     Transformed an outdated, difficult-to-use WordPress site
                     into a fast, visually engaging Next.js website with smooth
@@ -177,7 +177,7 @@ const StickyCards = () => {
                 </ul>
               </div>
             </div>
-            <div className="w-1/2">
+            <div className="hidden md:block w-1/2">
               {" "}
               <div className="relative w-full h-[300px] max-h-[300px] overflow-hidden rounded-2xl">
                 <Image
@@ -215,8 +215,8 @@ const StickyCards = () => {
         className={`sticky-card flex justify-center items-center   relative w-full h-svh  will-change-transform after:content-[''] after:absolute after:top-0 after:left-0 after:w-full after:h-full after:transition-opacity after:z-2 after:pointer-events-none`}
       >
         <div className="bg-purpleN-600 border w-[85%] rounded-2xl mx-auto h-[80%] flex items-center">
-          <div className="flex gap-5 w-[90%] mx-auto h-[95%]">
-            <div className="w-1/2">
+          <div className="md:flex gap-5 w-[90%] mx-auto h-[95%]">
+            <div className="md:w-1/2">
               {" "}
               <p className="text-bold text-xl mb-2">Tulip Pictures Website</p>
               <p className="italic text-sm">
@@ -257,7 +257,7 @@ const StickyCards = () => {
                 </ul>
               </div>
             </div>
-            <div className="w-1/2">
+            <div className="hidden md:block w-1/2">
               {" "}
               <div className="relative w-full h-[300px] max-h-[300px] overflow-hidden rounded-2xl">
                 <Image
