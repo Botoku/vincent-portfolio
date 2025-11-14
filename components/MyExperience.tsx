@@ -2,7 +2,7 @@ import React from "react";
 
 const MyExperience = () => {
   return (
-    <div className="">
+    <div className="" id="experience">
       <div className="w-[90%] mx-auto mb-20">
         <h2 className="text-center text-2xl font-bold">My Experience</h2>
         <div className="md:flex gap-7 text-sm mt-10">

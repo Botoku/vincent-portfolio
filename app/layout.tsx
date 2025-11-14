@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
-import {  Italiana } from "next/font/google";
+import { Italiana } from "next/font/google";
 import "./globals.css";
-import { Analytics } from "@vercel/analytics/next"
+import { Analytics } from "@vercel/analytics/next";
+import Header from "@/components/Header";
+import { LangProvider } from "@/utils/LangContext";
 
 // const geistSans = Geist({
 //   variable: "--font-geist-sans",
@@ -33,8 +35,11 @@ export default function RootLayout({
       <body
         className={` ${italiana.variable} bg-purpleN-800 antialiased text-white`}
       >
-        <Analytics/>
-        {children}
+        <LangProvider>
+          <Header />
+          <Analytics />
+          {children}
+        </LangProvider>
       </body>
     </html>
   );

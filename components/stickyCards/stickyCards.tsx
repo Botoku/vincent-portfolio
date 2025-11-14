@@ -37,7 +37,7 @@ const StickyCards = () => {
   );
 
   return (
-    <div ref={container} className="sticky-cards relative bg-full h-full">
+    <div id="work" ref={container} className="sticky-cards relative bg-full h-full">
       <p className="text-2xl text-center font-bold">My Work</p>
       <div
         className={`sticky-card flex justify-center items-center   relative w-full h-svh  will-change-transform after:content-[''] after:absolute after:top-0 after:left-0 after:w-full after:h-full after:transition-opacity after:z-2 after:pointer-events-none`}

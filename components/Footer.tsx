@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div>
+    <div id="contact">
       <p className="font-italiana text-center text-2xl my-6">Lets Talk</p>
       <div>
         <a href="mailto:jbotoku@gmail.com">jbotoku@gmail.com</a>
