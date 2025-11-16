@@ -2,8 +2,11 @@
 import React, { useRef } from "react";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
+import { useLang } from "@/utils/LangContext";
+
 
 const Skills = () => {
+  const {lang} = useLang()
   const barsRef = useRef<HTMLDivElement[]>([]);
   useGSAP(() => {
     const tl = gsap.timeline({ delay: 1 });
@@ -18,7 +21,7 @@ const Skills = () => {
   }, []);
   return (
     <div>
-      <h2 className="text-center text-lg font-bold mb-4">Skills</h2>
+      <h2 className="text-center text-lg font-bold mb-4">{lang === "en" ? "Skills" : "Habilidades"}</h2>
       <div className="w-full">
         <div>
           <span className="mr-2  text-sm">HTML</span>

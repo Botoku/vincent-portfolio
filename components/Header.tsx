@@ -1,9 +1,12 @@
+'use client'
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { LangSwitch } from "./LangSwitch";
+import { useLang } from "@/utils/LangContext";
 
 const Header = () => {
+  const {lang} = useLang()
   return (
     <div className="flex justify-between">
       <div className="relative w-10 h-10 rounded overflow-hidden">
@@ -13,13 +16,13 @@ const Header = () => {
       </div>
       <ul className="flex justify-between md:w-1/3">
         <li>
-          <Link href="/#experience">Experience</Link>
+          <Link href="/#experience">{lang === "en" ? "Experience" : "Experiencia"}</Link>
         </li>
         <li>
-          <Link href="/#work">My Work</Link>
+          <Link href="/#work">{lang === "en" ? "My Work" : "Mi trabajo"}</Link>
         </li>
         <li>
-          <Link href="/#contact">Lets Talk</Link>
+          <Link href="/#contact">{lang === "en" ? "Lets Talk" : "Hablemos"}</Link>
         </li>
       </ul>
       <LangSwitch />
