@@ -8,7 +8,7 @@ import { useLang } from "@/utils/LangContext";
 const Header = () => {
   const {lang} = useLang()
   return (
-    <div className="flex justify-between">
+    <div className="flex justify-between items-center px-3 w-[90%] mx-auto mt-2">
       <div className="relative w-10 h-10 rounded overflow-hidden">
         <Link href={"/"}>
           <Image  src="/logo-black.png" fill  alt="logo"/>

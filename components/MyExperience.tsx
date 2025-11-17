@@ -78,32 +78,35 @@ const MyExperience = () => {
             </div>
             <div className="">
               <p>
-                Collaborated with a remote team of 4 developers to implement and
-                test design variations on live websites using a jQuery-based A/B
-                testing tool. Integrated custom JavaScript snippets and event
-                tracking to analyze user behavior through Google Analytics.
+                {lang === "en"
+                  ? "Collaborated with a remote team of 4 developers to implement and test design variations on live websites using a jQuery-based A/B testing tool. Integrated custom JavaScript snippets and event tracking to analyze user behavior through Google Analytics."
+                  : "Colaboré con un equipo remoto de 4 desarrolladores para implementar y probar variaciones de diseño en sitios web en producción utilizando una herramienta de A/B testing basada en jQuery. Integré fragmentos personalizados de JavaScript y configuré el seguimiento de eventos para analizar el comportamiento de los usuarios mediante Google Analytics."}
               </p>
               <ul className="list-disc  mt-5">
                 <li className="mb-1">
-                  Implemented and managed multiple A/B tests to optimize user
-                  flows, resulting in improved conversion rates and reduced
-                  bounce rates.
+                  {lang === "en"
+                    ? "Implemented and managed multiple A/B tests to optimize user flows, resulting in improved conversion rates and reduced bounce rates."
+                    : "Implementé y gestioné múltiples pruebas A/B para optimizar los flujos de usuario, lo que resultó en mejores tasas de conversión y menores tasas de rebote."}
                 </li>
                 <li className="mb-1">
-                  Enhanced UI/UX by improving layouts and interactive elements,
-                  making navigation more intuitive for users.
+                  {lang === "en"
+                    ? "Enhanced UI/UX by improving layouts and interactive elements, making navigation more intuitive for users."
+                    : "Se mejoró la interfaz de usuario y la experiencia del usuario optimizando los diseños y los elementos interactivos, lo que hace que la navegación sea más intuitiva para los usuarios."}
                 </li>
                 <li className="mb-1">
-                  Diagnosed and resolved user experience bottlenecks by
-                  analyzing click heatmaps and session data.
+                  {lang === "en"
+                    ? "Diagnosed and resolved user experience bottlenecks by analyzing click heatmaps and session data."
+                    : "Diagnosticé y resolví cuellos de botella en la experiencia del usuario mediante el análisis de mapas de calor de clics y datos de sesión."}
                 </li>
                 <li className="mb-1">
-                  Worked closely with marketing and design teams to translate
-                  analytical insights into actionable design improvements.
+                  {lang === "en"
+                    ? "Worked closely with marketing and design teams to translate analytical insights into actionable design improvements."
+                    : "Colaboré estrechamente con los equipos de marketing y diseño para traducir los análisis en mejoras de diseño prácticas."}
                 </li>
                 <li className="mb-1">
-                  Configured Google Analytics events to track key user
-                  interactions and measure test performance.
+                  {lang === "en"
+                    ? "Configured Google Analytics events to track key user interactions and measure test performance."
+                    : "Se configuraron eventos de Google Analytics para realizar un seguimiento de las interacciones clave de los usuarios y medir el rendimiento de las pruebas."}
                 </li>
               </ul>
             </div>
