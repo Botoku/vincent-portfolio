@@ -33,6 +33,26 @@ const StickyCards = () => {
             pinSpacing: false,
           });
         }
+
+        if(index < stickyCards.length - 1) {
+           ScrollTrigger.create({
+            trigger: stickyCards[index + 1],
+            start: "top bottom",
+            end: "top top",
+            onUpdate: (self) => {
+              const progress = self.progress
+              const scale = 1 - progress *.25
+              const rotation = (index  %  2 === 0 ? 5 : -5) * progress
+              const afterOpacity = progress
+
+              gsap.set(card, {
+                scale: scale,
+                rotation: rotation,
+                "--after-opacity":afterOpacity
+              })
+            }
+           })
+        }
       });
     },
     { scope: container }
@@ -48,7 +68,7 @@ const StickyCards = () => {
         {lang === "en" ? "My Work" : "Mi Trabajo"}
       </p>
       <div
-        className={`sticky-card flex justify-center items-center   relative w-full h-svh  will-change-transform after:content-[''] after:absolute after:top-0 after:left-0 after:w-full after:h-full after:transition-opacity after:z-2 after:pointer-events-none`}
+        className={`sticky-card after:opacity-(--after-opacity,0)  flex justify-center items-center   relative w-full h-svh  will-change-transform after:content-[''] after:absolute after:top-0 after:left-0 after:w-full after:h-full after:transition-opacity after:z-2 after:pointer-events-none`}
       >
         <div className="bg-purpleN-600 border w-[85%] rounded-2xl mx-auto h-[80%] flex items-center">
           <div className="md:flex gap-5 w-[90%] mx-auto h-[95%]">
@@ -142,7 +162,7 @@ const StickyCards = () => {
         </div>
       </div>
       <div
-        className={`sticky-card flex justify-center items-center   relative w-full h-svh  will-change-transform after:content-[''] after:absolute after:top-0 after:left-0 after:w-full after:h-full after:transition-opacity after:z-2 after:pointer-events-none`}
+        className={`sticky-card after:opacity-(--after-opacity,0) flex justify-center items-center   relative w-full h-svh  will-change-transform after:content-[''] after:absolute after:top-0 after:left-0 after:w-full after:h-full after:transition-opacity after:z-2 after:pointer-events-none`}
       >
         <div className="bg-purpleN-600 border w-[85%] rounded-2xl mx-auto h-[80%] flex items-center">
           <div className="md:flex gap-5 w-[90%] mx-auto h-[95%]">
@@ -332,3 +352,5 @@ const StickyCards = () => {
 };
 
 export default StickyCards;
+
+
