@@ -76,6 +76,82 @@ const StickyCards = () => {
               {" "}
               <p className="text-bold text-xl mb-2">
                 {lang === "en"
+                  ? "Enso Productions"
+                  : "Enso Producciones"}
+              </p>
+              <p className="italic text-sm">
+                {lang === "en"
+                  ? "A multi-lingual visual website with lots of media material"
+                  : "Un sitio web visual multilingüe con mucho material multimedia."}
+              </p>
+              <div className="">
+                <ul className="my-3 text-xs list-disc">
+                  <p className="font-bold text-sm">
+                    {lang === "en" ? "What I did:" : "Lo que hice:"}
+                  </p>
+                  <li>
+                    {lang === "en"
+                      ? "Developed the website from scratch using Next.js and Tailwind CSS, ensuring a fast, responsive, and visually appealing design."
+                      : "Desarrollé el sitio web desde cero utilizando Next.js y Tailwind CSS, garantizando un diseño rápido, responsivo y visualmente atractivo."}
+                  </li>
+                  <li>
+                    {lang === "en"
+                      ? "Implemented smooth animations with GSAP to create an engaging and interactive user experience."
+                      : "Implementé animaciones fluidas con GSAP para crear una experiencia de usuario más dinámica e interactiva."}
+                  </li>
+      
+                  <li>
+                    {lang === "en"
+                      ? "Optimized the site for speed, accessibility, and SEO, ensuring excellent performance across all devices."
+                      : "Optimicé el sitio en velocidad, accesibilidad y SEO, garantizando un excelente rendimiento en todos los dispositivos."}
+                  </li>
+                </ul>
+       
+              </div>
+            </div>
+            <div className="hidden md:block w-1/2">
+              {" "}
+              <div className="relative w-full h-[300px] max-h-[300px] overflow-hidden rounded-2xl">
+                <Image
+                  unoptimized
+                  alt="Enso gif"
+                  src="https://cdn.sanity.io/images/57xt2rom/production/8612c327f98828dbb7b89e18422155a2a455f56b-1914x834.gif"
+                  fill
+                  className="object-cover w-full h-auto"
+                />
+              </div>
+              <div className="mt-4 text-xs">
+                <p className="text-sm  font-bold">
+                  {lang === "en" ? "Tech Stack" : "Tecnologías utilizadas"}
+                </p>
+                <ul className="flex gap-2 italic">
+                  <li>React</li>
+                  <li>Next.js</li>
+                  <li>Typescript</li>
+                  <li>Tailwind</li>
+                  <li>Sanity CMS</li>
+                </ul>
+              </div>
+              <a
+                className="text-sm  border-b "
+                href="https://www.letswoohoo.com/"
+                target="_blank"
+              >
+                {lang === "en" ? "View Website" : "Ver Sitio"}
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className={`sticky-card after:opacity-(--after-opacity,0)  flex justify-center items-center   relative w-full h-svh  will-change-transform after:content-[''] after:absolute after:top-0 after:left-0 after:w-full after:h-full after:transition-opacity after:z-2 after:pointer-events-none`}
+      >
+        <div className="bg-purpleN-600 border w-[85%] rounded-2xl mx-auto h-[80%] flex items-center">
+          <div className="md:flex gap-5 w-[90%] mx-auto h-[95%]">
+            <div className="md:w-1/2">
+              {" "}
+              <p className="text-bold text-xl mb-2">
+                {lang === "en"
                   ? "Letswoohoo Website"
                   : "Sitio web de Letswoohoo"}
               </p>
