@@ -21,7 +21,7 @@ const Skills = () => {
   }, []);
   return (
     <div>
-      <h2 className="text-center text-lg lg:text-2xl font-bold mb-4">{lang === "en" ? "Skills" : "Habilidades"}</h2>
+      <h2 className="text-center text-lg lg:text-xl font-bold mb-4">{lang === "en" ? "Skills" : "Habilidades"}</h2>
       <div className="w-full text-sm md:text-base">
         <div>
           <span className="mr-2  text-sm">HTML</span>
@@ -41,13 +41,13 @@ const Skills = () => {
       </div>
       <div className="w-full">
         <div>
-          <span className="mr-2  text-sm">Sanity CMS</span>
-          <span className="mr-2  text-sm">Mongo DB</span>
-          <span className="mr-2  text-sm">AWS</span>
-          <span className="mr-2  text-sm">Postgres</span>
+          {/* <span className="mr-2  text-sm">Sanity CMS</span> */}
           <span className="mr-2  text-sm">Node.js</span>
           <span className="mr-2  text-sm">Express.js</span>
           <span className="mr-2  text-sm">Typescript</span>
+          <span className="mr-2  text-sm">AWS</span>
+          <span className="mr-2  text-sm">Postgres</span>
+          <span className="mr-2  text-sm">Mongo DB</span>
         </div>
         <div
           ref={(el) => {
