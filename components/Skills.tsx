@@ -21,14 +21,16 @@ const Skills = () => {
   }, []);
   return (
     <div>
-      <h2 className="text-center text-lg font-bold mb-4">{lang === "en" ? "Skills" : "Habilidades"}</h2>
-      <div className="w-full">
+      <h2 className="text-center text-lg lg:text-2xl font-bold mb-4">{lang === "en" ? "Skills" : "Habilidades"}</h2>
+      <div className="w-full text-sm md:text-base">
         <div>
           <span className="mr-2  text-sm">HTML</span>
           <span className="mr-2  text-sm">CSS</span>
           <span className="mr-2  text-sm">Javascript</span>
           <span className="mr-2  text-sm">Next.js</span>
           <span className="mr-2  text-sm">React</span>
+          <span className="mr-2  text-sm">Tailwind</span>
+
         </div>
         <div
           ref={(el) => {
@@ -39,20 +41,22 @@ const Skills = () => {
       </div>
       <div className="w-full">
         <div>
-          <span className="mr-2  text-sm">Tailwind</span>
           <span className="mr-2  text-sm">Sanity CMS</span>
           <span className="mr-2  text-sm">Mongo DB</span>
+          <span className="mr-2  text-sm">AWS</span>
+          <span className="mr-2  text-sm">Postgres</span>
           <span className="mr-2  text-sm">Node.js</span>
+          <span className="mr-2  text-sm">Express.js</span>
           <span className="mr-2  text-sm">Typescript</span>
         </div>
         <div
           ref={(el) => {
             if (el) barsRef.current[1] = el;
           }}
-          className="w-[60%] bg-yellow-300 h-1 rounded-full my-2"
+          className="w-[65%] bg-yellow-300 h-1 rounded-full my-2"
         />
       </div>
-      <div className="w-full">
+      {/* <div className="w-full">
         <div>
           <span className="mr-2  text-sm">AWS</span>
           <span className="mr-2  text-sm">Three.js</span>
@@ -63,7 +67,7 @@ const Skills = () => {
           }}
           className="w-[60%] bg-red-300 h-1 rounded-full"
         />
-      </div>
+      </div> */}
     </div>
   );
 };

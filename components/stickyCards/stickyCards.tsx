@@ -72,9 +72,88 @@ const StickyCards = () => {
       >
         <div className="bg-purpleN-600 border w-[85%] rounded-2xl mx-auto h-[80%] flex items-center">
           <div className="md:flex gap-5 w-[90%] mx-auto h-[95%]">
-            <div className="md:w-1/2">
+            <div className="md:w-1/2 md:my-auto">
               {" "}
-              <p className="text-bold text-xl mb-2">
+              <p className="font-bold text-xl mb-2">
+                {lang === "en"
+                  ? "Snake Parent"
+                  : "Snake Parent"}
+              </p>
+              <p className="italic text-sm">
+                {lang === "en"
+                  ? "A full stack web app self deployed to Oracle Cloud."
+                  : "Un app full stack."}
+              </p>
+              <div className="">
+                <ul className="my-3 text-xs list-disc">
+                  <p className="font-bold text-sm">
+                    {lang === "en" ? "What I did:" : "Lo que hice:"}
+                  </p>
+                  <li>
+                    {lang === "en"
+                      ? "Developed the website from scratch using Next.js, Tailwind CSS, Express,PostgreSQl."
+                      : "Desarrollé el sitio web desde cero utilizando Next.js, Tailwind CSS, Express y PostgreSQL."}
+                  </li>
+                  <li>
+                    {lang === "en"
+                      ? "The frontend, backend and Postgres DB are all deployed to an Oracle Cloud VM"
+                      : "El frontend, el backend y la base de datos Postgres están implementados en una máquina virtual de Oracle Cloud."}
+                  </li>
+      
+                  <li>
+                    {lang === "en"
+                      ? "State management is handled with Zustand"
+                      : "La gestión del state se lleva con Zustand"}
+                  </li>
+                </ul>
+       
+              </div>
+            </div>
+            <div className="hidden md:block w-1/2 md:my-auto">
+              {" "}
+              <div className="relative w-full h-[300px] max-h-[300px] overflow-hidden rounded-2xl">
+                <Image
+                  unoptimized
+                  alt="Snake Parent"
+                  src="/snakeParent.png"
+                  fill
+                  className="object-cover w-full h-auto"
+                />
+              </div>
+              <div className="mt-4 text-xs">
+                <p className="text-sm  font-bold">
+                  {lang === "en" ? "Tech Stack" : "Tecnologías utilizadas"}
+                </p>
+                <ul className="flex gap-2 italic">
+                  <li>React</li>
+                  <li>Next.js</li>
+                  <li>Typescript</li>
+                  <li>Tailwind</li>
+                  <li>Express</li>
+                  <li>Better Auth</li>
+                  <li>Zustand</li>
+                  <li>Oracle Cloud</li>
+                </ul>
+              </div>
+              <a
+                className="text-sm  border-b "
+                href="https://snakeparent.com/"
+                target="_blank"
+              >
+                {lang === "en" ? "View Website" : "Ver Sitio"}
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className={`sticky-card after:opacity-(--after-opacity,0)  flex justify-center items-center   relative w-full h-svh  will-change-transform after:content-[''] after:absolute after:top-0 after:left-0 after:w-full after:h-full after:transition-opacity after:z-2 after:pointer-events-none`}
+      >
+        <div className="bg-purpleN-600 border w-[85%] rounded-2xl mx-auto h-[80%] flex items-center">
+          <div className="md:flex gap-5 w-[90%] mx-auto h-[95%]">
+            <div className="md:w-1/2 md:my-auto">
+              {" "}
+              <p className="font-bold text-xl mb-2">
                 {lang === "en"
                   ? "Enso Productions"
                   : "Enso Producciones"}
@@ -109,7 +188,7 @@ const StickyCards = () => {
        
               </div>
             </div>
-            <div className="hidden md:block w-1/2">
+            <div className="hidden md:block w-1/2 md:my-auto">
               {" "}
               <div className="relative w-full h-[300px] max-h-[300px] overflow-hidden rounded-2xl">
                 <Image
@@ -148,9 +227,9 @@ const StickyCards = () => {
       >
         <div className="bg-purpleN-600 border w-[85%] rounded-2xl mx-auto h-[80%] flex items-center">
           <div className="md:flex gap-5 w-[90%] mx-auto h-[95%]">
-            <div className="md:w-1/2">
+            <div className="md:w-1/2 md:my-auto">
               {" "}
-              <p className="text-bold text-xl mb-2">
+              <p className="font-bold text-xl mb-2">
                 {lang === "en"
                   ? "Letswoohoo Website"
                   : "Sitio web de Letswoohoo"}
@@ -203,7 +282,7 @@ const StickyCards = () => {
                 </ul>
               </div>
             </div>
-            <div className="hidden md:block w-1/2">
+            <div className="hidden md:block w-1/2 md:my-auto">
               {" "}
               <div className="relative w-full h-[300px] max-h-[300px] overflow-hidden rounded-2xl">
                 <Image
@@ -242,9 +321,9 @@ const StickyCards = () => {
       >
         <div className="bg-purpleN-600 border w-[85%] rounded-2xl mx-auto h-[80%] flex items-center">
           <div className="md:flex gap-5 w-[90%] mx-auto h-[95%]">
-            <div className="md:w-1/2">
+            <div className="md:w-1/2 md:my-auto">
               {" "}
-              <p className="text-bold text-xl mb-2">
+              <p className="font-bold text-xl mb-2">
                 {lang === "en" ? "grupolvt Website" : "Sitio web de Grupolvt"}
               </p>
               <p className="italic text-sm">
@@ -297,7 +376,7 @@ const StickyCards = () => {
                 </ul>
               </div>
             </div>
-            <div className="hidden md:block w-1/2">
+            <div className="hidden md:block w-1/2 md:my-auto">
               {" "}
               <div className="relative w-full h-[300px] max-h-[300px] overflow-hidden rounded-2xl">
                 <Image
@@ -338,9 +417,9 @@ const StickyCards = () => {
       >
         <div className="bg-purpleN-600 border w-[85%] rounded-2xl mx-auto h-[80%] flex items-center">
           <div className="md:flex gap-5 w-[90%] mx-auto h-[95%]">
-            <div className="md:w-1/2">
+            <div className="md:w-1/2 md:my-auto">
               {" "}
-              <p className="text-bold text-xl mb-2">
+              <p className="font-bold text-xl mb-2">
                 {lang === "en"
                   ? "Tulip Pictures Website"
                   : "Sitio web de Tulip Pictures"}
@@ -389,7 +468,7 @@ const StickyCards = () => {
                 </ul>
               </div>
             </div>
-            <div className="hidden md:block w-1/2">
+            <div className="hidden md:block w-1/2 md:my-auto">
               {" "}
               <div className="relative w-full h-[300px] max-h-[300px] overflow-hidden rounded-2xl">
                 <Image

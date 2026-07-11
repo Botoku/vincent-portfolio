@@ -11,12 +11,12 @@ const MyExperience = () => {
         <h2 className="text-center text-2xl font-bold">
           {lang === "en" ? "My Experience" : "Mi Experiencia"}
         </h2>
-        <div className="md:flex gap-7 text-sm mt-10">
+        <div className="md:flex gap-7 text-sm md:text-base mt-10">
           <div className="md:w-1/2">
             <div className="flex gap-2 mb-4">
               <p className="font-bold">LetsWooHoo</p>
               <p className="italic">Nov 2023 - Present</p>
-              <p className="text-xs my-auto ml-auto">
+              <p className="text-xs md:text-sm my-auto ml-auto">
                 {lang === "en"
                   ? "Full Stack Developer (Hybrid/Mexico)"
                   : "Desarrollador Full Stack (Híbrido/México)"}
@@ -68,11 +68,11 @@ const MyExperience = () => {
               </ul>
             </div>
           </div>
-          <div className="text-sm mt-10 md:mt-0 md:w-1/2">
+          <div className="text-sm md:text-base mt-10 md:mt-0 md:w-1/2">
             <div className="flex gap-2 mb-4">
               <p className="font-bold">Team Croco</p>
               <p className="italic">July 2022 - Nov 2023</p>
-              <p className="text-xs my-auto ml-auto">
+              <p className="text-xs md:text-sm my-auto ml-auto">
                 Front-End Developer (Remote)
               </p>
             </div>

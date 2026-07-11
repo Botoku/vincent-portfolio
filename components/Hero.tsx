@@ -9,20 +9,21 @@ const Hero = () => {
     <div className="bg-purpleN-600  w-[95vw] md:h-[85%] rounded-2xl flex justify-center items-center">
       <div className="md:h-[80%] w-[90%] mb-3 md:mb-0 mx-auto">
         <h1 className="hidden">Vincent Portfolio</h1>
-        <p className="font-italiana text-center text-2xl my-6">
+        <p className="font-italiana text-center text-2xl lg:text-4xl my-6">
           Botoku Vincent Babajide
         </p>
         <div className="md:flex justify-between items-center">
           <div className="md:w-1/3">
-            <h2 className="text-center text-lg font-bold">
+            <h2 className="text-center text-lg lg:text-2xl font-bold">
               {lang === "en" ? "About Me" : "Sobre mí"}
             </h2>
-            <p className="mb-3 text-sm">
+            <p className="mb-3 text-sm md:text-base">
               {lang === "en"
-                ? "I develop full-stack applications using React, Next.js, Node.js, and MongoDB and I also work with a range of AWS services."
-                : "Desarrollo aplicaciones full-stack utilizando React, Next.js, Node.js y MongoDB y también trabajo con diversos servicios de AWS."}
+                ? "I develop full-stack applications using React, Next.js, Node.js, Express.js, and MongoDB and I also work with a range of AWS services."
+                : "Desarrollo aplicaciones full-stack utilizando React, Next.js, Node.js, Express.js y MongoDB y también trabajo con diversos servicios de AWS."}
               <br />
-              <span>
+              <br />
+              <span className="italic text-sm">
                 {lang === "en"
                   ? "For the non-technical"
                   : "Para los no técnicos"}
